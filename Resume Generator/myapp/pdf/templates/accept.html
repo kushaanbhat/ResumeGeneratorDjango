@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Accept | Form</title>
+</head>
+<body>
+    <div class ="container">
+        <h1>Python Mini Project</h1>
+        <h3>Resume Generator</h3>
+        <h5>Project Guide: Prof Pranali Hatode</h5>
+        <h5>Group Members : A-5 Madhav Asawa | A-7 Aman Bhardwaj | A-8 Vidhan Bhasme | A-9 Kushaan Bhat</h5>
+        <br>
+        <h5>Fill Your Details Below:-</h5>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group","">
+          <label for="">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <label for="">Phone</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone No.">
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <label for="">College</label>
+            <input type="text" class="form-control" id="college" name="college" placeholder="Enter College Name">
+        </div>
+        <div class="form-group">
+            <label for="">Degree</label>
+            <input type="text" class="form-control" id="degree" name="degree" placeholder="Enter Degree">
+        </div>
+        <div class="form-group">
+            <label for="">CGPA</label>
+            <input type="text" class="form-control" id="cgpa" name="cgpa" placeholder="Enter CGPA">
+        </div>
+        <div class="form-group">
+            <label for="">Skills</label>
+            <input type="text" class="form-control" id="skills" name="skills" placeholder="Enter Skills">
+        </div>
+        <div class="form-group">
+            <label for="">About</label>
+            <input type="text" class="form-control" id="about" name="about" placeholder="Enter About You">
+        </div>
+        <div class="form-group">
+            <label for="">Experience</label>
+            <input type="text" class="form-control" id="experience" name="experience" placeholder="Enter Your Experience">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+</body>
+</html>
